@@ -16,5 +16,10 @@ pipeline {
                 sh "mvn package"
             }
         }
+         stage('--Run La--') { 
+            steps {
+                sh "mvn install"
+            }
+        }
     }
 }
